@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J V Pharmacy</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css')}}">
+
+</head>
+<body background="/static/images/bgiii.jpg">
+    
+    <!-- header starting -->
+    <header>
+        <img src="/static/images/logo.png" alt="logo"> 
+        
+        <div class="head-tag">
+
+        <a href="#">Home</a>
+        <a href="{{url_for('purchase')}}">Purchase</a>
+        <a href="{{url_for('about')}}">About Us</a>
+        <!-- <a href="login.html" target="_blank">LogIn</a> -->
+
+        </div>
+
+    </header>
+    <!-- header ending -->
+    <!-- Aside portion -->
+    
+    <div class="side-bar">
+    
+        <h3> J V Medicals</h3>
+        <br>
+    <ul>
+        <li> 40+ years of Service</li>
+        <li> Medicine rates upto 13% to 15% Discount</li>
+        <li> All Medicines Available</li>
+    </ul>
+    
+    </div>
+    <!-- aside portion ends -->
+
+
+
+</body>
+</html>

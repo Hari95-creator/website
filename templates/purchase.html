@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J V Pharmacy</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css')}}">
+    
+    <style>
+        .card 
+        {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 200px;
+          /* margin: auto; */
+          text-align: center;
+          font-family: arial;
+          float: left;
+          padding: 10px;
+          margin-right: 3em;
+          margin-bottom: 3em;
+          color: blueviolet;
+    
+        }
+        .card h3
+        {
+            font-size: medium;
+        }
+        
+        .price 
+        {
+          color:black;
+          font-size: 22px;
+        }
+        
+        .card button 
+        {
+          border: none;
+          outline: 0;
+          padding: 12px;
+          color: white;
+          background-color: #000;
+          text-align: center;
+          cursor: pointer;
+          width: 100%;
+          font-size: 18px;
+        }
+        
+        .card button:hover 
+        {
+          opacity: 0.7;
+        }
+        .card img
+        {
+          height:100px;
+          width: 100px;
+        }
+    </style>
+
+</head>
+<body style="background-color:whitesmoke">
+    
+    <!-- header starting -->
+    <header>
+        <img src="/static/images/logo.png" alt="logo"> 
+
+            <div class="head-tag">
+
+                <a href="{{url_for('home')}}" target="_blank">Home</a>
+                <a href="{{url_for('purchase')}}">Purchase</a>
+                <a href="{{url_for('about')}}">About Us</a>
+                <!-- <a href="login.html" target="_blank">LogIn</a> -->
+        
+            </div>
+    </header>
+    <!-- header ending -->
+    
+    
+    <div class="card">
+    <img src="/static/images/paracetamol.jpg" alt="medicine">
+    <h3>Paracetamol</h3>
+    <p class="price">Rs.10 (Per Strip)</p>
+    <p><button>BUY</button></p>
+    </div>
+        
+    </div>
+    <div class="card">
+    <img src="/static/images/azithro.jpeg" alt="medicine">
+    <h3>Azithromycin</h3>
+    <p class="price">Rs.10 (Per Strip)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/cetri.jpg" alt="medicine">
+    <h3>Cetirizen</h3>
+    <p class="price">Rs.10 (Per Strip)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/asthalin.jpg" alt="medicine">
+    <h3>Asthalin</h3>
+    <p class="price">Rs.350 (single one)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/covaccine.jpeg" alt="medicine">
+    <h3>Co-vaccine</h3>
+    <p class="price">Rs.500</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+    
+    <div class="card">
+    <img src="/static/images/Anti.jpg" alt="medicine">
+    <h3>Anti Rabies vaccine</h3>
+    <p class="price">Rs.120 </p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+                   
+    <div class="card">
+    <img src="/static/images/dettol.jpg" alt="medicine">
+    <h3>Detol</h3>
+    <p class="price">Rs.150 (100ml)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+                        
+    <div class="card">
+    <img src="/static/images/mask.jpg" alt="medcine">
+    <h3>Masks</h3>
+    <p class="price">Rs.5 (single one)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+                            
+    <div class="card">
+    <img src="/static/images/savlon.jpg" alt="medicine">
+    <h3>Savlon Handsanitizer</h3>
+    <p class="price">Rs.150 (100 ml)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+                                
+    <div class="card">
+    <img src="/static/images/asthalin.jpg" alt="medicine">
+    <h3>Inhalers</h3>
+    <p class="price">Rs.370 (single one)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/sanitary.jpg" alt="medicine">
+    <h3>Sanitary Pads</h3>
+    <p class="price">Rs.10 </p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/whey.jpg" alt="medicine">
+    <h3>Protein</h3>
+    <p class="price">Rs.100 (per Bottel)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/pencilin.jpg" alt="medicine">
+    <h3>Pencilin</h3>
+    <p class="price">Rs.40 (per strip)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/insulin.jpg" alt="medicine">
+    <h3>Insulin</h3>
+    <p class="price">Rs.150 (one Bottel)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+       
+    <div class="card">
+    <img src="/static/images/aspirin.jpeg" alt="medicine">
+    <h3>Aspirin</h3>
+    <p class="price">Rs.10 (Per Strip)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/hair.jpg" alt="medicne">
+    <h3>Hair Oil</h3>
+    <p class="price">Rs.100 (150 ml)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+    
+    <div class="card">
+    <img src="/static/images/head.jpg" alt="medicine">
+    <h3>Head & Shoulders</h3>
+    <p class="price">Rs.95 (100 ml)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+
+    <div class="card">
+    <img src="/static/images/detolhand.jpg" alt="medicine">
+    <h3>Detol Hand Wash</h3>
+    <p class="price">Rs.150 (100 ml)</p>
+    <p><button>BUY</button></p>
+    </div>
+    </div>
+</body>
+</html>

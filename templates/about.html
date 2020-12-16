@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J V Pharmacy</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styles.css')}}">
+    <style>
+        .about h3
+        {
+            text-align: center;
+            color: blueviolet;
+            font-size:100px;
+        }
+        .para p
+        {
+            text-align: justify;
+            font-size: x-large;
+            padding: 50px;
+            color:black;
+        }
+    </style>
+</head>
+<body background="/static/images/pgbii.jpg">
+    <!-- header starting -->
+    <header>
+        <img src="/static/images/logo.png" alt="logo"> 
+        
+        <div class="head-tag">
+
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('purchase')}}">Purchase</a>
+        <a href="{{url_for('about')}}">About Us</a>
+        <!-- <a href="login.html" target="_blank">LogIn</a> -->
+
+        </div>
+
+    </header>
+    <!-- header ending -->
+    
+    <div class="about">
+        <h3>About As</h3>
+    </div>
+    <div class="para">
+        <p> J V Group are the forerunner of integrated healthcare in Asia with a futuristic vision of making India a preferred global healthcare destination.
+
+            At the behest of his father, in 1971, Dr. Reddy left behind a flourishing practice in Boston and returned to India. On his return, he found the medical landscape in the country plagued by gaps in infrastructure, delivery, and affordability. Things took a turn for the worse when he lost a young patient who just did not have the means to go abroad for treatment. The incident marked a crossroad in Dr. Reddy’s life and steeled his determination to get quality healthcare to India. He set the blueprint to build India’s first multi-specialty private sector hospital.
+            
+            Undaunted and unfazed by the obstacles faced, Apollo Hospitals opened its doors in 1983 and ever since nurtured a goal which read as “Our mission is to bring healthcare of international standards within the reach of every individual. We are committed to the achievement and maintenance of excellence in education, research and healthcare for the benefit of humanity”.
+            
+            In the 35 years since it has scripted one of the most magnificent stories of success that India has seen. Not only is the Apollo Group one of the largest integrated healthcare groups in the region, it also did successfully catalyze the private healthcare revolution in the country. Apollo today has made every aspect of their lofty mission a reality. Along the way, the journey has touched and enriched 42 million lives who came from 120 countries.
+            
+            Apollo Hospitals was the forerunner of integrated healthcare in Asia, as well as globally. Today, the group’s futuristic vision has ensured that it has been in a position of strength at every touch point of the healthcare delivery chain. Its presence encompasses over 10,000 beds across 64 hospitals, more than 2200 pharmacies, over 100 primary care & diagnostic clinics, 115 telemedicine units across 9 countries, health insurance services, global projects consultancy, 15 academic institutions and a Research Foundation with a focus on global clinical trials, epidemiological studies, stem-cell and genetic research.
+            
+            The Group continues to break new ground in adopting new technology. From leveraging new age mobility to getting futuristic equipment Apollo has always been ahead of the curve. Currently, the group believes in the tremendous potential of robotics and is investing heavily in making it a real and robust option for all. Apollo pioneered Tender Loving Care (TLC) and it continues to be the magic that inspires hope, warmth and a sense of ease in the patients.</p>
+
+    </div>
+    
+</body>
+</html>
